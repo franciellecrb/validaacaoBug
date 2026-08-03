@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos | QA Stores</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/storage.js" defer></script>
+    <script src="js/produtos.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="index.html">QA <span>Stores</span></a>
+    </div>
+    <div class="search">
+        <input type="text" id="search" placeholder="Pesquisar produtos...">
+        <button id="btnPesquisar">🔍</button>
+    </div>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="perfil.html">Minha Conta</a>
+        <a href="carrinho.html" class="cart">🛒
+            <span id="cart-count">0</span>
+        </a>
+    </nav>
+</header>
+<main class="products-page">
+    <section class="page-title">
+        <h1>Produtos</h1>
+        <p>Encontre os melhores eletrônicos para o seu dia a dia.</p>
+    </section>
+    <section class="filters">
+        <select id="categoria">
+            <option value="todos">Todas as categorias</option>
+            <option value="notebooks">Notebooks</option>
+            <option value="smartphones">Smartphones</option>
+            <option value="monitores">Monitores</option>
+            <option value="perifericos">Periféricos</option>
+            <option value="audio">Áudio</option>
+        </select>
+        <select id="ordenacao">
+            <option value="padrao">Ordenar por</option>
+            <option value="menor">Menor preço</option>
+            <option value="maior">Maior preço</option>
+            <option value="nome">Nome</option>
+        </select>
+    </section>
+    <section id="products" class="products-grid">
+        <!-- Produtos carregados pelo produtos.js -->
+    </section>
+</main>
+<footer>
+    <div class="footer-content">
+        <div>
+            <h3>QA Stores</h3>
+            <p>Tecnologia com qualidade.</p>
+        </div>
+        <div>
+            <h4>Categorias</h4>
+            <ul>
+                <li>Notebooks</li>
+                <li>Smartphones</li>
+                <li>Monitores</li>
+                <li>Periféricos</li>
+                <li>Áudio</li>
+            </ul>
+        </div>
+        <div>
+            <h4>Atendimento</h4>
+            <p>contato@qastores.com</p>
+            <p>(31) 3333-3333</p>
+        </div>
+    </div>
+</footer>
+<template id="product-template">
+    <article class="product-card">
+        <img class="product-image" src="" alt="Produto">
+        <div class="product-info">
+            <span class="category"></span>
+            <h3 class="product-name"></h3>
+            <p class="product-description"></p>
+            <div class="price-area">
+                <span class="old-price"></span>
+                <span class="price"></span>
+            </div>
+            <button class="btn-buy">Comprar</button>
+        </div>
+    </article>
+</template>
+</body>
+</html>

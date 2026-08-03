@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Stores</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/storage.js" defer></script>
+    <script src="js/produtos.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="index.html">QA <span>Stores</span></a>
+    </div>
+    <div class="search">
+        <input type="text" id="search" placeholder="Pesquisar produtos...">
+        <button id="btnPesquisar">🔍</button>
+    </div>
+    <nav>
+        <a href="produtos.html">Produtos</a>
+        <a href="login.html">Entrar</a>
+        <a href="cadastro.html">Criar Conta</a>
+        <a href="perfil.html">Minha Conta</a>
+        <a href="carrinho.html" class="cart">🛒
+            <span id="cart-count">0</span>
+        </a>
+    </nav>
+</header>
+<main>
+<section class="hero">
+    <div class="hero-text">
+        <h1> Tecnologia para quem busca qualidade.</h1>
+        <p>Smartphones, notebooks, periféricos e acessórios selecionados para você.</p>
+        <a href="produtos.html" class="btn">Comprar agora</a>
+    </div>
+</section>
+<section class="benefits">
+    <article>🚚
+        <h3> Frete para todo Brasil</h3>
+    </article>
+    <article>🔒
+        <h3>Compra Segura</h3>
+    </article>
+    <article>💳
+        <h3>Parcelamento em até 12x</h3>
+    </article>
+</section>
+<section class="featured">
+    <div class="section-title">
+        <h2>Produtos em Destaque</h2>
+    </div>
+    <div id="products"  class="products-grid"></div>
+</section>
+</main>
+<footer>
+    <div>
+        <h3> QA Stores </h3>
+        <p>Tecnologia, qualidade e inovação.</p>
+    </div>
+    <br>
+    <div>
+        <h4>Atendimento</h4>
+        <p>contato@qastores.com</p>
+        <p>(31) 3333-3333</p>
+    </div>
+</footer>
+</body>
+</html>
