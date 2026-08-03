@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho | QA Stores</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/storage.js" defer></script>
+    <script src="js/carrinho.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="index.html">QA <span>Stores</span></a>
+    </div>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="perfil.html">Minha Conta</a>
+        <a href="login.html">Sair</a>
+    </nav>
+</header>
+<main class="cart-page">
+    <section class="cart-header">
+        <h1>Meu Carrinho</h1>
+        <p>Confira seus produtos antes de finalizar a compra.</p>
+    </section>
+    <section class="cart-content">
+        <div class="cart-items">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                        <th>Subtotal</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody id="cartItems">
+                    <!--Produtos inseridos via JavaScript-->
+                </tbody>
+            </table>
+        </div>
+        <aside class="cart-summary">
+            <h2>Resumo do Pedido</h2>
+            <div class="summary-line">
+                <span>Subtotal</span>
+                <span id="subtotal">R$ 0,00</span>
+            </div>
+            <div class="summary-line">
+                <span>Frete</span>
+                <span id="shipping">R$ 29,90</span>
+            </div>
+            <div class="summary-line total">
+                <span>Total</span>
+                <span id="total">R$ 29,90</span>
+            </div>
+            <button id="btnCheckout" class="btn">Finalizar Compra</button>
+            <a href="produtos.html" class="btn-outline">Continuar Comprando</a>
+        </aside>
+    </section>
+    <section class="checkout-form">
+        <h2>Dados para Entrega</h2>
+        <form id="checkoutForm">
+            <div class="input-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" placeholder="Digite seu nome">
+            </div>
+            <div class="input-group">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" placeholder="00000-000">
+            </div>
+            <div class="input-group">
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" placeholder="Rua, Avenida...">
+            </div>
+            <div class="input-group">
+                <label for="numero">Número</label>
+                <input type="text" id="numero" placeholder="123">
+            </div>
+            <div class="input-group">
+                <label for="cidade"> Cidade</label>
+                <input type="text" id="cidade">
+            </div>
+            <div class="input-group">
+                <label for="telefone">Telefone </label>
+                <input type="text" id="telefone" placeholder="(31) 99999-9999">
+            </div>
+        </form>
+    </section>
+</main>
+<footer>
+    <p>© 2026 QA Stores - Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>
