@@ -40,7 +40,6 @@ if(registerForm){
         const telefone=document.getElementById("telefone").value;
         const senha=document.getElementById("senha").value;
         const confirmarSenha=document.getElementById("confirmarSenha").value;
-        const newsletter=document.getElementById("newsletter").checked;
         let users=getUsers();
         const novoUsuario={
             id:Date.now(),
@@ -48,7 +47,6 @@ if(registerForm){
             email:email,
             telefone:telefone,
             senha:senha,
-            newsletter:newsletter,
             pedidos:[]
         };
         users.push(novoUsuario);
